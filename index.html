@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <title>Lesson_17 (complicated task)</title>
+</head>
+<body>
+
+	  <div class='tabs tabs_default'>
+              <ul class='horizontal'>
+                <li><a href="#tab-1">SVG Draw</a></li>
+                <li><a href="#tab-2">Slider</a></li>
+              </ul>
+            <div id='tab-1'>
+               <div class="icon-animation" id="svg-animation"></div> 
+            </div>
+            <div id='tab-2'>
+				<div class="owl-carousel owl-theme owl-loaded">
+					<div class="slide">
+						<div class="image">
+							<img src="img/img_2.jpg">
+						</div>
+						<div class="slide__text">
+							<h3 class="slide__title">Aston Martin Valkyrie</h3>
+							<p class="slide__desc">Как сообщает издание Road & Track, особенность новинки в том, что количество «лошадок» в нем превысит массу самого транспортного средства. «Валькирия» получит гибридную установку, в состав которой войдут 1000-сильный 6.5-литровый V12</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="image">
+							<img src="img/img_1.jpg">
+						</div>
+						<div class="slide__text">
+							<h3 class="slide__title">Chevrolet Corvette ZR1 2018 — 2019 года</h3>
+							<p class="slide__desc">Осенью этого года была проведена массовая презентация нового спорткара Chevrolet Corvette ZR1 2018-2019 модельного года на специальном мероприятии в Дубае. В данной работе будут представлены особенности, описание дизайна и салона, а также фото и стоимость спорткара.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="image">
+							<img src="img/img_3.jpg">
+						</div>
+						<div class="slide__text">
+							<h3 class="slide__title">TVR Griffith</h3>
+							<p class="slide__desc">В разработке нового TVR Griffith принял участие легендарный Городон Мюррей. В основе конструкции спорткара — стальной трубчатый каркас, обшитый углепластиковыми наружными панелями. Размеры кузова составляют 4379, 1850 и 1239 мм, соответственно.</p>
+						</div>
+					</div>
+						<div class="owl-nav">
+					        <div class="owl-prev"></div>
+					        <div class="owl-next"></div>
+				    	</div>
+				    	<div class="owl-dots">
+					        <div class="owl-dot active"><span></span></div>
+					        <div class="owl-dot"><span></span></div>
+					        <div class="owl-dot"><span></span></div>
+				    	</div>
+				</div>
+            </div>
+        </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.tabslet.min.js"></script>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+$('.tabs').tabslet({
+  	active: 1
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    autoplaySpeed: 1000
+	})
+});
+</script>
+</body>
+</html>
